@@ -1,0 +1,14 @@
+# 敏感信息与本地产物
+.env
+*.key
+*secret*
+logs/
+__pycache__/
+*.pyc
+.pytest_cache/
+build/
+dist/
+*.egg-info/
+.venv/
+venv/
+.DS_Store
