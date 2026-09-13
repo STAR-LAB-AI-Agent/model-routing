@@ -1,0 +1,42 @@
+# nanobot skills 注册文件（供 nanobot / 兼容 Agent Runtime 加载）
+# 每个 skill 指向一个 Script/CLI 入口，runtime 通过子进程调用。
+
+skills:
+  - name: ai-model-router
+    description: >
+      根据用户自然语言任务，自动路由到最合适的 LLM 模型（GPT / 通义千问 / DeepSeek），
+      统计耗时、Token 与成本。支持 route / call / stats / models 四个操作。
+    skill_md: ./SKILL.md
+    # 统一 Script 入口
+    script: python -m router.cli
+    # 该 skill 可调用的子命令
+    commands:
+      - name: route
+        description: 仅做路由决策，返回选定模型与理由
+        invoke: python -m router.cli route "$task"
+      - name: call
+        description: 路由并真实调用模型，返回结果/Token/成本/耗时
+        invoke: python -m router.cli call "$task" ${model:+--model $model}
+      - name: stats
+        description: 返回累计调用统计
+        invoke: python -m router.cli stats
+      - name: models
+        description: 列出已注册模型池
+        invoke: python -m router.cli models
+    # 最小权限
+    permissions:
+      network:
+        allowed: true   # 真实调用时需要联网；Mock 模式下不联网
+      filesystem:
+        read: ["./"]
+        write: ["./logs", "./.cache"]
+      env:
+        allowed:
+          - OPENAI_API_KEY
+          - DASHSCOPE_API_KEY
+          - QWEN_API_KEY
+          - DEEPSEEK_API_KEY
+          - USE_MOCK
+    security:
+      confirm_before: []   # 本 skill 无破坏性操作，无需确认
+      audit_log: ./logs/router.log
