@@ -1,0 +1,6 @@
+{
+  "prompt": "请用三点总结以下会议记录：项目已完成需求分析。下一步实现模型路由与统计。周五进行测试和演示。",
+  "preference": "balanced",
+  "confirm_live": true,
+  "max_tokens": 256
+}

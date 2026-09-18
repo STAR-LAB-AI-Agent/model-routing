@@ -1,0 +1,29 @@
+{
+  "providers": {
+    "custom": {
+      "apiBase": "https://api.deepseek.com",
+      "extraBody": {
+        "thinking": {
+          "type": "disabled"
+        }
+      }
+    }
+  },
+  "modelPresets": {
+    "router-agent": {
+      "provider": "custom",
+      "model": "deepseek-flash",
+      "maxTokens": 4096,
+      "contextWindowTokens": 32768
+    }
+  },
+  "agents": {
+    "defaults": {
+      "modelPreset": "router-agent",
+      "maxToolIterations": 8
+    }
+  },
+  "tools": {
+    "restrictToWorkspace": true
+  }
+}

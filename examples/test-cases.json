@@ -1,0 +1,12 @@
+[
+  {"id":"T01","prompt":"用一句话解释什么是机器学习。","expected_tier":"eco","category":"正常问答"},
+  {"id":"T02","prompt":"请总结：需求已经确定。周五进行验收。","expected_tier":"balanced","category":"正常摘要"},
+  {"id":"T03","prompt":"Python 实现二分查找并分析复杂度","expected_tier":"reasoner","category":"正常代码"},
+  {"id":"T04","prompt":"证明任意两个连续整数的乘积是偶数","expected_tier":"reasoner","category":"正常推理"},
+  {"id":"T05","prompt":"总结：周一开发，周五测试。","preference":"cost","expected_tier":"eco","category":"成本偏好"},
+  {"id":"T06","prompt":"请解释人工智能","preference":"quality","expected_tier":"balanced","category":"质量偏好"},
+  {"id":"T07","prompt":"请用 Python 分析并发任务","preference":"cost","expected_tier":"reasoner","category":"能力下限"},
+  {"id":"T08","prompt":"  ","expected_error":"EMPTY_PROMPT","category":"空输入"},
+  {"id":"T09","prompt":"hello","max_tokens":1,"expected_error":"INVALID_MAX_TOKENS","category":"参数边界"},
+  {"id":"T10","prompt":"hello","api_base":"https://example.invalid","expected_error":"UNKNOWN_FIELD","category":"禁止请求覆盖端点"}
+]
