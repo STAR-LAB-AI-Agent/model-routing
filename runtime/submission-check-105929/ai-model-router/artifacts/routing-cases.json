@@ -1,0 +1,77 @@
+{
+  "generated_at": "2026-09-17T02:50:03.626730+00:00",
+  "cases": [
+    {
+      "id": "T01",
+      "category": "正常问答",
+      "expected": "eco",
+      "actual": "eco",
+      "pass": true
+    },
+    {
+      "id": "T02",
+      "category": "正常摘要",
+      "expected": "balanced",
+      "actual": "balanced",
+      "pass": true
+    },
+    {
+      "id": "T03",
+      "category": "正常代码",
+      "expected": "reasoner",
+      "actual": "reasoner",
+      "pass": true
+    },
+    {
+      "id": "T04",
+      "category": "正常推理",
+      "expected": "reasoner",
+      "actual": "reasoner",
+      "pass": true
+    },
+    {
+      "id": "T05",
+      "category": "成本偏好",
+      "expected": "eco",
+      "actual": "eco",
+      "pass": true
+    },
+    {
+      "id": "T06",
+      "category": "质量偏好",
+      "expected": "balanced",
+      "actual": "balanced",
+      "pass": true
+    },
+    {
+      "id": "T07",
+      "category": "能力下限",
+      "expected": "reasoner",
+      "actual": "reasoner",
+      "pass": true
+    },
+    {
+      "id": "T08",
+      "category": "空输入",
+      "expected": "EMPTY_PROMPT",
+      "actual": "EMPTY_PROMPT",
+      "pass": true
+    },
+    {
+      "id": "T09",
+      "category": "参数边界",
+      "expected": "INVALID_MAX_TOKENS",
+      "actual": "INVALID_MAX_TOKENS",
+      "pass": true
+    },
+    {
+      "id": "T10",
+      "category": "禁止请求覆盖端点",
+      "expected": "UNKNOWN_FIELD",
+      "actual": "UNKNOWN_FIELD",
+      "pass": true
+    }
+  ],
+  "passed": 10,
+  "total": 10
+}

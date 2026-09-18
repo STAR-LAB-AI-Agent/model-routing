@@ -1,0 +1,66 @@
+{
+  "ok": true,
+  "nanobot_version": "0.3.5",
+  "skill_discovered": true,
+  "execution_tool": "nanobot.agent.tools.shell.ExecTool",
+  "workspace_restricted": true,
+  "mode": "live",
+  "router_result": {
+    "ok": true,
+    "request_id": "219a9070034a4cd1",
+    "mode": "live",
+    "route": {
+      "tier": "eco",
+      "model": "openai/deepseek-flash",
+      "label": "Flash · 快速",
+      "task_type": "qa",
+      "thinking": "disabled",
+      "pricing_band": "peak",
+      "task_label": "简单问答",
+      "difficulty_score": 0,
+      "characters": 14,
+      "estimated_input_tokens": 89,
+      "max_output_tokens": 256,
+      "estimated_cost_at_output_limit": 0.0003339,
+      "currency": "USD",
+      "pricing_note": "费用为服务返回用量乘官方单价的估算；按请求开始的 UTC 时段计价，以服务商账单为准。",
+      "reasons": [
+        "任务类型：简单问答",
+        "启发式难度分：0/7",
+        "输入约 89 Token（含系统提示，字符启发式估算）"
+      ],
+      "routing_model_calls": 0,
+      "token_estimator": "character_heuristic_not_tokenizer"
+    },
+    "currency": "USD",
+    "cache_hit": false,
+    "provider_calls": 1,
+    "answer": "机器学习是让计算机从数据中自动学习规律，并用于预测或决策的方法。",
+    "input_tokens": 34,
+    "output_tokens": 18,
+    "provider_cache_hit_tokens": 0,
+    "provider_cache_miss_tokens": 34,
+    "reasoning_tokens": null,
+    "finish_reason": "stop",
+    "incomplete": false,
+    "response_model": "deepseek-flash",
+    "warning": null,
+    "usage_source": "provider_reported",
+    "model_latency_ms": 2322.45,
+    "cost": 3.18e-05,
+    "cost_source": "provider_usage_official_rates_estimate",
+    "pricing_band": "peak",
+    "rates": {
+      "input_per_million": 0.3,
+      "cached_input_per_million": 0.006,
+      "output_per_million": 1.2
+    },
+    "original_usage": {
+      "input_tokens": 34,
+      "output_tokens": 18,
+      "cost": 3.18e-05
+    },
+    "latency_ms": 4859.85
+  },
+  "scope": "Real SkillsLoader + ExecTool invocation. Real DeepSeek generation through the script. No orchestration LLM planning is claimed."
+}

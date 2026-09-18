@@ -1,0 +1,33 @@
+// Real page clicks; no answer injection, pre-recorded output, or key entry.
+(async () => {
+  const byId=id=>document.getElementById(id);
+  const sleep=ms=>new Promise(resolve=>setTimeout(resolve,ms));
+  const ready=async()=>{for(let i=0;i<1300;i++){if(!byId('run').disabled)return;await sleep(100);}throw Error('Request timeout');};
+  const run=async()=>{byId('run').click();await ready();const r=JSON.parse(byId('jsonOutput').textContent);if(!r.ok||r.incomplete)throw Error('Generation did not complete');return r;};
+  const banner=document.createElement('div');
+  Object.assign(banner.style,{position:'fixed',bottom:'18px',left:'50%',transform:'translateX(-50%)',zIndex:1000,padding:'13px 22px',background:'#153a35',color:'#fff',borderRadius:'8px',fontSize:'18px',boxShadow:'0 6px 25px #0002',whiteSpace:'nowrap'});
+  banner.setAttribute('aria-label','演示字幕');document.body.append(banner);
+  const caption=text=>banner.textContent=text;
+  const evidence=[];
+  caption('第25题 · AI模型智能路由 / DeepSeek 真实 API');
+  scrollTo(0,0);await sleep(1700);
+  byId('openSettings').click();caption('动态配置密钥：本机加密保存，不回显；修改后立即生效');
+  byId('checkSettings').click();
+  for(let i=0;i<220 && byId('checkSettings').disabled;i++)await sleep(100);
+  if(!byId('settingsMessage').textContent.includes('连接成功'))throw Error('Connection test failed');
+  await sleep(2200);byId('closeSettings').click();
+  document.querySelector('[data-example="qa"]').click();byId('maxTokens').value='256';byId('preview').click();await ready();
+  caption('1. 简单问答 → Flash；路由预览不调用大模型');await sleep(2000);
+  evidence.push(await run());caption('真实回答 + 服务返回的 Token + 实测耗时');await sleep(2500);
+  document.querySelector('[data-example="summary"]').click();
+  caption('2. 摘要整理 → Pro 均衡档位');evidence.push(await run());await sleep(3000);
+  document.querySelector('[data-example="code"]').click();byId('maxTokens').value='2048';
+  caption('3. 代码任务 → Pro 推理档位，显式开启思考');evidence.push(await run());await sleep(3500);
+  evidence.push(await run());if(!evidence[3].cache_hit)throw Error('Expected local cache hit');
+  caption('重复任务命中本地缓存：新增调用、Token、费用均为 0');await sleep(3000);
+  document.querySelector('.stats-panel').scrollIntoView({behavior:'smooth',block:'center'});
+  caption('统计看板 / Skill + Script / 已验证 nanobot 真实调用');await sleep(3500);
+  window.__recordedEvidence=evidence;
+  banner.remove();
+  return {ok:true,description:'Three real generation calls, one local cache hit and connection check.'};
+})();

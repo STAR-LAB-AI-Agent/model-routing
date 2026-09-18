@@ -1,0 +1,431 @@
+{
+  "generated_at": "2026-09-17T02:39:25.078660+00:00",
+  "cases": [
+    {
+      "id": "T01",
+      "category": "正常问答",
+      "expected": "eco",
+      "actual": "eco",
+      "pass": true
+    },
+    {
+      "id": "T02",
+      "category": "正常摘要",
+      "expected": "balanced",
+      "actual": "balanced",
+      "pass": true
+    },
+    {
+      "id": "T03",
+      "category": "正常代码",
+      "expected": "reasoner",
+      "actual": "reasoner",
+      "pass": true
+    },
+    {
+      "id": "T04",
+      "category": "正常推理",
+      "expected": "reasoner",
+      "actual": "reasoner",
+      "pass": true
+    },
+    {
+      "id": "T05",
+      "category": "成本偏好",
+      "expected": "eco",
+      "actual": "eco",
+      "pass": true
+    },
+    {
+      "id": "T06",
+      "category": "质量偏好",
+      "expected": "balanced",
+      "actual": "balanced",
+      "pass": true
+    },
+    {
+      "id": "T07",
+      "category": "能力下限",
+      "expected": "reasoner",
+      "actual": "reasoner",
+      "pass": true
+    },
+    {
+      "id": "T08",
+      "category": "空输入",
+      "expected": "EMPTY_PROMPT",
+      "actual": "EMPTY_PROMPT",
+      "pass": true
+    },
+    {
+      "id": "T09",
+      "category": "参数边界",
+      "expected": "INVALID_MAX_TOKENS",
+      "actual": "INVALID_MAX_TOKENS",
+      "pass": true
+    },
+    {
+      "id": "T10",
+      "category": "禁止请求覆盖端点",
+      "expected": "UNKNOWN_FIELD",
+      "actual": "UNKNOWN_FIELD",
+      "pass": true
+    }
+  ],
+  "passed": 10,
+  "total": 10,
+  "real_api": {
+    "first": [
+      {
+        "ok": true,
+        "request_id": "40a945f3f88243bf",
+        "mode": "live",
+        "route": {
+          "tier": "eco",
+          "model": "openai/deepseek-flash",
+          "label": "Flash · 快速",
+          "task_type": "qa",
+          "thinking": "disabled",
+          "pricing_band": "peak",
+          "task_label": "简单问答",
+          "difficulty_score": 0,
+          "characters": 14,
+          "estimated_input_tokens": 89,
+          "max_output_tokens": 256,
+          "estimated_cost_at_output_limit": 0.0003339,
+          "currency": "USD",
+          "pricing_note": "费用为服务返回用量乘官方单价的估算；按请求开始的 UTC 时段计价，以服务商账单为准。",
+          "reasons": [
+            "任务类型：简单问答",
+            "启发式难度分：0/7",
+            "输入约 89 Token（含系统提示，字符启发式估算）"
+          ],
+          "routing_model_calls": 0,
+          "token_estimator": "character_heuristic_not_tokenizer"
+        },
+        "currency": "USD",
+        "cache_hit": false,
+        "provider_calls": 1,
+        "answer": "机器学习是让计算机从数据中自动学习规律和模式，并用于预测或决策，而无需显式编写规则。",
+        "input_tokens": 34,
+        "output_tokens": 26,
+        "provider_cache_hit_tokens": 0,
+        "provider_cache_miss_tokens": 34,
+        "reasoning_tokens": null,
+        "finish_reason": "stop",
+        "incomplete": false,
+        "response_model": "deepseek-flash",
+        "warning": null,
+        "usage_source": "provider_reported",
+        "model_latency_ms": 2409.98,
+        "cost": 4.14e-05,
+        "cost_source": "provider_usage_official_rates_estimate",
+        "pricing_band": "peak",
+        "rates": {
+          "input_per_million": 0.3,
+          "cached_input_per_million": 0.006,
+          "output_per_million": 1.2
+        },
+        "original_usage": {
+          "input_tokens": 34,
+          "output_tokens": 26,
+          "cost": 4.14e-05
+        },
+        "latency_ms": 2411.75
+      },
+      {
+        "ok": true,
+        "request_id": "f222256c10c447a7",
+        "mode": "live",
+        "route": {
+          "tier": "balanced",
+          "model": "openai/deepseek-v4-pro",
+          "label": "Pro · 均衡",
+          "task_type": "summary",
+          "thinking": "disabled",
+          "pricing_band": "peak",
+          "task_label": "摘要整理",
+          "difficulty_score": 1,
+          "characters": 46,
+          "estimated_input_tokens": 134,
+          "max_output_tokens": 256,
+          "estimated_cost_at_output_limit": 0.00119064,
+          "currency": "USD",
+          "pricing_note": "费用为服务返回用量乘官方单价的估算；按请求开始的 UTC 时段计价，以服务商账单为准。",
+          "reasons": [
+            "任务类型：摘要整理",
+            "启发式难度分：1/7",
+            "输入约 134 Token（含系统提示，字符启发式估算）"
+          ],
+          "routing_model_calls": 0,
+          "token_estimator": "character_heuristic_not_tokenizer"
+        },
+        "currency": "USD",
+        "cache_hit": false,
+        "provider_calls": 1,
+        "answer": "1. 需求分析已完成。\n2. 下一步工作是实现模型路由与统计功能。\n3. 本周五进行测试和演示。",
+        "input_tokens": 53,
+        "output_tokens": 29,
+        "provider_cache_hit_tokens": 0,
+        "provider_cache_miss_tokens": 53,
+        "reasoning_tokens": null,
+        "finish_reason": "stop",
+        "incomplete": false,
+        "response_model": "deepseek-v4-pro",
+        "warning": null,
+        "usage_source": "provider_reported",
+        "model_latency_ms": 1646.26,
+        "cost": 0.0001848,
+        "cost_source": "provider_usage_official_rates_estimate",
+        "pricing_band": "peak",
+        "rates": {
+          "input_per_million": 1.32,
+          "cached_input_per_million": 0.044,
+          "output_per_million": 3.96
+        },
+        "original_usage": {
+          "input_tokens": 53,
+          "output_tokens": 29,
+          "cost": 0.0001848
+        },
+        "latency_ms": 1647.65
+      },
+      {
+        "ok": true,
+        "request_id": "531131c003664b20",
+        "mode": "live",
+        "route": {
+          "tier": "reasoner",
+          "model": "openai/deepseek-v4-pro",
+          "label": "Pro · 深度推理",
+          "task_type": "code",
+          "thinking": "enabled",
+          "pricing_band": "peak",
+          "task_label": "代码任务",
+          "difficulty_score": 3,
+          "characters": 43,
+          "estimated_input_tokens": 121,
+          "max_output_tokens": 2048,
+          "estimated_cost_at_output_limit": 0.0082698,
+          "currency": "USD",
+          "pricing_note": "费用为服务返回用量乘官方单价的估算；按请求开始的 UTC 时段计价，以服务商账单为准。",
+          "reasons": [
+            "任务类型：代码任务",
+            "启发式难度分：3/7",
+            "输入约 121 Token（含系统提示，字符启发式估算）"
+          ],
+          "routing_model_calls": 0,
+          "token_estimator": "character_heuristic_not_tokenizer"
+        },
+        "currency": "USD",
+        "cache_hit": false,
+        "provider_calls": 1,
+        "answer": "```python\ndef binary_search(arr, target):\n    \"\"\"在有序数组 arr 中查找 target，返回索引；找不到返回 -1\"\"\"\n    left, right = 0, len(arr) - 1\n    while left <= right:\n        mid = left + (right - left) // 2  # 避免溢出\n        if arr[mid] == target:\n            return mid\n        elif arr[mid] < target:\n            left = mid + 1\n        else:\n            right = mid - 1\n    return -1\n```\n\n**时间复杂度**：O(log n)，其中 n 为数组长度。每次比较将搜索范围减半。\n\n**测试用例**：\n\n1. **空数组**\n```python\nassert binary_search([], 1) == -1\n```\n\n2. **找不到元素**\n```python\narr = [1, 3, 5, 7, 9]\nassert binary_search(arr, 4) == -1   # 目标在范围内但不存在\nassert binary_search(arr, 0) == -1   # 目标小于最小元素\nassert binary_search(arr, 10) == -1  # 目标大于最大元素\n```",
+        "input_tokens": 48,
+        "output_tokens": 278,
+        "provider_cache_hit_tokens": 0,
+        "provider_cache_miss_tokens": 48,
+        "reasoning_tokens": 28,
+        "finish_reason": "stop",
+        "incomplete": false,
+        "response_model": "deepseek-v4-pro",
+        "warning": null,
+        "usage_source": "provider_reported",
+        "model_latency_ms": 3950.38,
+        "cost": 0.00116424,
+        "cost_source": "provider_usage_official_rates_estimate",
+        "pricing_band": "peak",
+        "rates": {
+          "input_per_million": 1.32,
+          "cached_input_per_million": 0.044,
+          "output_per_million": 3.96
+        },
+        "original_usage": {
+          "input_tokens": 48,
+          "output_tokens": 278,
+          "cost": 0.00116424
+        },
+        "latency_ms": 3951.67
+      }
+    ],
+    "repeat": [
+      {
+        "ok": true,
+        "request_id": "b0e9f6e0cda14b3f",
+        "mode": "live",
+        "route": {
+          "tier": "eco",
+          "model": "openai/deepseek-flash",
+          "label": "Flash · 快速",
+          "task_type": "qa",
+          "thinking": "disabled",
+          "pricing_band": "peak",
+          "task_label": "简单问答",
+          "difficulty_score": 0,
+          "characters": 14,
+          "estimated_input_tokens": 89,
+          "max_output_tokens": 256,
+          "estimated_cost_at_output_limit": 0.0003339,
+          "currency": "USD",
+          "pricing_note": "费用为服务返回用量乘官方单价的估算；按请求开始的 UTC 时段计价，以服务商账单为准。",
+          "reasons": [
+            "任务类型：简单问答",
+            "启发式难度分：0/7",
+            "输入约 89 Token（含系统提示，字符启发式估算）"
+          ],
+          "routing_model_calls": 0,
+          "token_estimator": "character_heuristic_not_tokenizer"
+        },
+        "currency": "USD",
+        "cache_hit": true,
+        "provider_calls": 0,
+        "answer": "机器学习是让计算机从数据中自动学习规律和模式，并用于预测或决策，而无需显式编写规则。",
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "provider_cache_hit_tokens": 0,
+        "provider_cache_miss_tokens": 0,
+        "reasoning_tokens": 0,
+        "finish_reason": "stop",
+        "incomplete": false,
+        "response_model": "deepseek-flash",
+        "warning": null,
+        "usage_source": "cache_no_new_usage",
+        "model_latency_ms": 0.0,
+        "cost": 0.0,
+        "cost_source": "cache_no_new_charge",
+        "pricing_band": "peak",
+        "rates": {
+          "input_per_million": 0.3,
+          "cached_input_per_million": 0.006,
+          "output_per_million": 1.2
+        },
+        "original_usage": {
+          "input_tokens": 34,
+          "output_tokens": 26,
+          "cost": 4.14e-05
+        },
+        "latency_ms": 0.88
+      },
+      {
+        "ok": true,
+        "request_id": "ba279386b2ca48e1",
+        "mode": "live",
+        "route": {
+          "tier": "balanced",
+          "model": "openai/deepseek-v4-pro",
+          "label": "Pro · 均衡",
+          "task_type": "summary",
+          "thinking": "disabled",
+          "pricing_band": "peak",
+          "task_label": "摘要整理",
+          "difficulty_score": 1,
+          "characters": 46,
+          "estimated_input_tokens": 134,
+          "max_output_tokens": 256,
+          "estimated_cost_at_output_limit": 0.00119064,
+          "currency": "USD",
+          "pricing_note": "费用为服务返回用量乘官方单价的估算；按请求开始的 UTC 时段计价，以服务商账单为准。",
+          "reasons": [
+            "任务类型：摘要整理",
+            "启发式难度分：1/7",
+            "输入约 134 Token（含系统提示，字符启发式估算）"
+          ],
+          "routing_model_calls": 0,
+          "token_estimator": "character_heuristic_not_tokenizer"
+        },
+        "currency": "USD",
+        "cache_hit": true,
+        "provider_calls": 0,
+        "answer": "1. 需求分析已完成。\n2. 下一步工作是实现模型路由与统计功能。\n3. 本周五进行测试和演示。",
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "provider_cache_hit_tokens": 0,
+        "provider_cache_miss_tokens": 0,
+        "reasoning_tokens": 0,
+        "finish_reason": "stop",
+        "incomplete": false,
+        "response_model": "deepseek-v4-pro",
+        "warning": null,
+        "usage_source": "cache_no_new_usage",
+        "model_latency_ms": 0.0,
+        "cost": 0.0,
+        "cost_source": "cache_no_new_charge",
+        "pricing_band": "peak",
+        "rates": {
+          "input_per_million": 1.32,
+          "cached_input_per_million": 0.044,
+          "output_per_million": 3.96
+        },
+        "original_usage": {
+          "input_tokens": 53,
+          "output_tokens": 29,
+          "cost": 0.0001848
+        },
+        "latency_ms": 1.09
+      },
+      {
+        "ok": true,
+        "request_id": "2f786fc56f194c25",
+        "mode": "live",
+        "route": {
+          "tier": "reasoner",
+          "model": "openai/deepseek-v4-pro",
+          "label": "Pro · 深度推理",
+          "task_type": "code",
+          "thinking": "enabled",
+          "pricing_band": "peak",
+          "task_label": "代码任务",
+          "difficulty_score": 3,
+          "characters": 43,
+          "estimated_input_tokens": 121,
+          "max_output_tokens": 2048,
+          "estimated_cost_at_output_limit": 0.0082698,
+          "currency": "USD",
+          "pricing_note": "费用为服务返回用量乘官方单价的估算；按请求开始的 UTC 时段计价，以服务商账单为准。",
+          "reasons": [
+            "任务类型：代码任务",
+            "启发式难度分：3/7",
+            "输入约 121 Token（含系统提示，字符启发式估算）"
+          ],
+          "routing_model_calls": 0,
+          "token_estimator": "character_heuristic_not_tokenizer"
+        },
+        "currency": "USD",
+        "cache_hit": true,
+        "provider_calls": 0,
+        "answer": "```python\ndef binary_search(arr, target):\n    \"\"\"在有序数组 arr 中查找 target，返回索引；找不到返回 -1\"\"\"\n    left, right = 0, len(arr) - 1\n    while left <= right:\n        mid = left + (right - left) // 2  # 避免溢出\n        if arr[mid] == target:\n            return mid\n        elif arr[mid] < target:\n            left = mid + 1\n        else:\n            right = mid - 1\n    return -1\n```\n\n**时间复杂度**：O(log n)，其中 n 为数组长度。每次比较将搜索范围减半。\n\n**测试用例**：\n\n1. **空数组**\n```python\nassert binary_search([], 1) == -1\n```\n\n2. **找不到元素**\n```python\narr = [1, 3, 5, 7, 9]\nassert binary_search(arr, 4) == -1   # 目标在范围内但不存在\nassert binary_search(arr, 0) == -1   # 目标小于最小元素\nassert binary_search(arr, 10) == -1  # 目标大于最大元素\n```",
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "provider_cache_hit_tokens": 0,
+        "provider_cache_miss_tokens": 0,
+        "reasoning_tokens": 0,
+        "finish_reason": "stop",
+        "incomplete": false,
+        "response_model": "deepseek-v4-pro",
+        "warning": null,
+        "usage_source": "cache_no_new_usage",
+        "model_latency_ms": 0.0,
+        "cost": 0.0,
+        "cost_source": "cache_no_new_charge",
+        "pricing_band": "peak",
+        "rates": {
+          "input_per_million": 1.32,
+          "cached_input_per_million": 0.044,
+          "output_per_million": 3.96
+        },
+        "original_usage": {
+          "input_tokens": 48,
+          "output_tokens": 278,
+          "cost": 0.00116424
+        },
+        "latency_ms": 0.76
+      }
+    ],
+    "actual_requests": 6,
+    "actual_provider_calls": 3,
+    "input_tokens": 135,
+    "output_tokens": 333,
+    "estimated_cost_usd": 0.00139044,
+    "note": "Three real requests followed by three in-process cache hits. Repeated requests made zero new API calls. No uncached baseline run or model quality benchmark is claimed."
+  }
+}

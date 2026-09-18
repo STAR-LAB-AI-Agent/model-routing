@@ -1,0 +1,5 @@
+{
+  "prompt": "请用 Python 实现二分查找，说明时间复杂度，并给出空数组和找不到元素的测试用例。",
+  "max_tokens": 2048,
+  "confirm_live": true
+}
