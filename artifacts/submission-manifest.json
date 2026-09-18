@@ -1,0 +1,390 @@
+{
+  "project": "RouteLab course project 25",
+  "files": [
+    {
+      "path": ".env.example",
+      "bytes": 302,
+      "sha256": "1bce2a2091006de511ad057d69735df8453578d50adad86ee23cd4d0668a1d8d"
+    },
+    {
+      "path": ".gitattributes",
+      "bytes": 78,
+      "sha256": "5f73d07140b85970352208d9067110e17d49f8dd7f729c5c6b272b2e45ebd81e"
+    },
+    {
+      "path": ".github/workflows/tests.yml",
+      "bytes": 466,
+      "sha256": "7d94ea8aa9f762e11632436fa43efd0b3b16ea00b1fedb71b49e8c592906e3ba"
+    },
+    {
+      "path": ".gitignore",
+      "bytes": 332,
+      "sha256": "43f0167f9c6ae9668711d315c56b7489f650c9e442cf3fdea1eabfdc70792c97"
+    },
+    {
+      "path": "AGENTS.md",
+      "bytes": 511,
+      "sha256": "e9ce6ede9de82f47de4b169523559bd03b1ab8b97e611b98a95d5d4ddebcbcbb"
+    },
+    {
+      "path": "LICENSE",
+      "bytes": 1078,
+      "sha256": "2b08edfe51bea9830bd029e1464e56f7685c3e8fba09f890d66e4a80a99aa30a"
+    },
+    {
+      "path": "README.md",
+      "bytes": 6919,
+      "sha256": "e3b765d8f7243ceaf7eff61320aa826a8d9f00c1dcf5e8c661f43647e53bbddd"
+    },
+    {
+      "path": "START-HERE.md",
+      "bytes": 702,
+      "sha256": "3265efa7405f33933894cb5523b4b82b505aba739ada11b08a3ad90a2815a854"
+    },
+    {
+      "path": "app.py",
+      "bytes": 5965,
+      "sha256": "948e99e514f6e64bdf7e94407fc741ac2f7cd3382b6dec72413adfd89bc29de7"
+    },
+    {
+      "path": "artifacts/demo-home.png",
+      "bytes": 91527,
+      "sha256": "22dc39d51c1692f7fe7f62a3335fe03ca29aa8403cf20bebeb7ede69ce1850e6"
+    },
+    {
+      "path": "artifacts/demo-mobile.png",
+      "bytes": 41833,
+      "sha256": "741866dc07ba9d9a184b82b72efc5e95653c9cd773c78a6916ef8a7be06070a5"
+    },
+    {
+      "path": "artifacts/demo-result.png",
+      "bytes": 108021,
+      "sha256": "c1b7b0f635d429246fc77c96ed78f855488ebbd6406aee3efcc60d0c2a8e5ccc"
+    },
+    {
+      "path": "artifacts/environment.txt",
+      "bytes": 2091,
+      "sha256": "8ee47391919511bb2c78466056a1b360ede89559615f1897001e4bfadf4a6934"
+    },
+    {
+      "path": "artifacts/evaluation.json",
+      "bytes": 16415,
+      "sha256": "7e9962ab7dd554bb53d55a9a66db922cf9d5a3a9bbc80b11363a4d84df96c49d"
+    },
+    {
+      "path": "artifacts/mobile-check.json",
+      "bytes": 722,
+      "sha256": "76776d3a1560dcb78499d8c014bf7a625037a17692921490395f32db2ed346fc"
+    },
+    {
+      "path": "artifacts/nanobot-agent-verification.txt",
+      "bytes": 1613,
+      "sha256": "9693a612553449c7d6e0c59e5b8e6f6609db98f62c2fe83c760e18ef936a1c28"
+    },
+    {
+      "path": "artifacts/nanobot-verification.json",
+      "bytes": 2238,
+      "sha256": "5264875560f8fb00d73ba38c142b05582bab0ba3bd2a0024d98042fa4b9b9434"
+    },
+    {
+      "path": "artifacts/recorded-live-calls.json",
+      "bytes": 7890,
+      "sha256": "2780c4195bb9cb290173d99b75edcd76ce34809c013b7ce93264c3859c0843c8"
+    },
+    {
+      "path": "artifacts/routing-cases.json",
+      "bytes": 1637,
+      "sha256": "271ed0222a7a79d9773c1b3bad9f304bb32a8eb47331cebd6130fc9a8661fcd6"
+    },
+    {
+      "path": "artifacts/test-results.xml",
+      "bytes": 34073,
+      "sha256": "bb5c76275b8cf21f52523afccda689dc491578d7a98e2760e3977533c5507a86"
+    },
+    {
+      "path": "artifacts/ui-check.json",
+      "bytes": 722,
+      "sha256": "76776d3a1560dcb78499d8c014bf7a625037a17692921490395f32db2ed346fc"
+    },
+    {
+      "path": "artifacts/video-metadata.json",
+      "bytes": 330,
+      "sha256": "22e8f900f34413167ec269f8c6d4e1b2e94c4a531ec44d587d2575139380d8ea"
+    },
+    {
+      "path": "deliverables/demo.mp4",
+      "bytes": 3472231,
+      "sha256": "9f7616f31ea7127b4d58d7ab34629e66b99c82275aedf7f013594e594054d822"
+    },
+    {
+      "path": "deliverables/实验报告.pdf",
+      "bytes": 140317,
+      "sha256": "94bc4fac41a46a1473c374ae183d4fd4b12f50b09ceb461d5485271a81efa913"
+    },
+    {
+      "path": "docs/acceptance-guide.md",
+      "bytes": 3771,
+      "sha256": "c9c6ef33a39c4a746e2c263a449875e67636e2af669e1c2711a8515d0fce5a7a"
+    },
+    {
+      "path": "docs/demo-script.md",
+      "bytes": 2526,
+      "sha256": "f664dccd9e2cd2c024b0e3cc90ab14f17222a748734f330687f97f99ce1f5238"
+    },
+    {
+      "path": "docs/design.md",
+      "bytes": 2183,
+      "sha256": "aed17a290cd486f52e60a910a86ff6b6015e821d17a70eb3ddd70910f45192be"
+    },
+    {
+      "path": "docs/experiment-report.md",
+      "bytes": 10340,
+      "sha256": "e06e5a062844a13a7822adddb87c1865e39d2e9ad1a4493d66a77f080057e396"
+    },
+    {
+      "path": "docs/interface.md",
+      "bytes": 1614,
+      "sha256": "ca8ca96290db9e2743eeb8d7bba1452f7e8204e0f499b968c4962e16b19a32ed"
+    },
+    {
+      "path": "docs/nanobot.md",
+      "bytes": 2274,
+      "sha256": "af1e5be394af99dacce4cd5a16f387da4a610be0b602011c6cd76f6361219e99"
+    },
+    {
+      "path": "docs/proposal.md",
+      "bytes": 967,
+      "sha256": "6b09f653c27a681a2f9e902a49de7a5c972dd51fd79ba1f1b81e0882d964038e"
+    },
+    {
+      "path": "docs/requirements-matrix.md",
+      "bytes": 1528,
+      "sha256": "378ff3aaf625814def842ef4b3d8e0dbde26f7ac3428e9f55272b37be3b8dccb"
+    },
+    {
+      "path": "docs/student-info.json",
+      "bytes": 147,
+      "sha256": "5db67db682e7b8b26c8814b6ae37f297f282222c0ad85a181dd0a99a409aef73"
+    },
+    {
+      "path": "docs/test-report.md",
+      "bytes": 2667,
+      "sha256": "638115bd79c4a51e81fdb5ac7ff500d438432f209ceb47cf3917bde007486844"
+    },
+    {
+      "path": "examples/code.json",
+      "bytes": 181,
+      "sha256": "56e425a3a073aa4e09f0087bebe27ab29aa61260ce2cbab2c982fa22f3aaee93"
+    },
+    {
+      "path": "examples/nanobot.config.example.json",
+      "bytes": 514,
+      "sha256": "c3357bad0cde06f6f3043b145aed5675dd3669620d848dbf5599b29dcb1ae3be"
+    },
+    {
+      "path": "examples/qa.json",
+      "bytes": 109,
+      "sha256": "f573e8afdbfa8b67649da5b629f29421c5423209c565c78fd72d3a52ab6de4f1"
+    },
+    {
+      "path": "examples/summary.json",
+      "bytes": 234,
+      "sha256": "d709600c6f48e4dea24b83c5fb55d5849b4e56d5013c48bb603fa53436f48a10"
+    },
+    {
+      "path": "examples/test-cases.json",
+      "bytes": 1240,
+      "sha256": "e1e2fe481b2f792713ba7299175d2cb0f5eeb29c96e49fa616ac3053cb8695e3"
+    },
+    {
+      "path": "licenses/litellm.txt",
+      "bytes": 1445,
+      "sha256": "985158f5e7d3b6f690e2630fe6751fb1f3199f4eebb97ceec2facef689875804"
+    },
+    {
+      "path": "licenses/nanobot-ai.txt",
+      "bytes": 1122,
+      "sha256": "7f8aa0d8a5e34afb065df28faca1220614dcf6e55e547384cf391183469ad425"
+    },
+    {
+      "path": "licenses/pytest.txt",
+      "bytes": 7866,
+      "sha256": "310bae44184e03783a2f43a8d7fd7851a3c40e44f87bcbf913d9f6ae97767ec0"
+    },
+    {
+      "path": "licenses/reportlab.txt",
+      "bytes": 1733,
+      "sha256": "98979c0446a0dc6284e0e9b76edb7002311f6a39376418672cfba5e37866dcf9"
+    },
+    {
+      "path": "requirements-artifacts.txt",
+      "bytes": 89,
+      "sha256": "62d0bc33b57dd5881fc60c3105f8c3264a5f46d27c8bebf9cf5d551c6cef3cd6"
+    },
+    {
+      "path": "requirements-dev.txt",
+      "bytes": 34,
+      "sha256": "3c3ad6730cf0c0417b77bae38e53c11fa8cd96a34f2f8956998bafc0aaf3ef17"
+    },
+    {
+      "path": "requirements-lock.txt",
+      "bytes": 154049,
+      "sha256": "2ad02ef1548958e94276b165123fbc41cfa77cf7853bc3ce51e20e3004336d56"
+    },
+    {
+      "path": "requirements-nanobot.txt",
+      "bytes": 38,
+      "sha256": "fe3761d0191664fca87f1f8e2ae120a2ef0003ef517d9bdf17d9d212cd006ee4"
+    },
+    {
+      "path": "requirements.txt",
+      "bytes": 17,
+      "sha256": "e04b7415c8c659e9e98a9c75a3aef22fe29bbdce5064eaf011e0f16591e6ed05"
+    },
+    {
+      "path": "run-tests.bat",
+      "bytes": 134,
+      "sha256": "655f5e8138a7705094e15dbc3b048e457b399d2b36391fb43c6ee2d846150f2c"
+    },
+    {
+      "path": "scripts/build_report.py",
+      "bytes": 5673,
+      "sha256": "6fb1a915e5bcf787080d349ad50207063672ccea6e278a10b87fd8b2b04536b7"
+    },
+    {
+      "path": "scripts/configure_key.py",
+      "bytes": 647,
+      "sha256": "70367397547515d2dcac4de94e7162c501967c9e78a5eaad43b8a94567da0c34"
+    },
+    {
+      "path": "scripts/demo-tour.js",
+      "bytes": 3819,
+      "sha256": "946452187362e1dfe394eca3086aa6ad68cae25e772bc28920bed7e3cf20b3fc"
+    },
+    {
+      "path": "scripts/evaluate.py",
+      "bytes": 2836,
+      "sha256": "ab18f8490ce6e8431518973e04692f966322b0aa2a075362c6eb79fb75f6027b"
+    },
+    {
+      "path": "scripts/package_project.py",
+      "bytes": 2638,
+      "sha256": "beba6494b9f4046143c25d95c92c40457836757553f318d0704fea487c0c3b69"
+    },
+    {
+      "path": "scripts/record-demo.ps1",
+      "bytes": 2172,
+      "sha256": "67626d6cc1ec4ea06531de529c30e515762252e9ce37f1dc42d89a9738295bb8"
+    },
+    {
+      "path": "scripts/run_nanobot.py",
+      "bytes": 1774,
+      "sha256": "a7c47fc688989cce83d7c6f26c9a9a9b1e882e21ee87667531834e0cb11db233"
+    },
+    {
+      "path": "scripts/ui-check.js",
+      "bytes": 1381,
+      "sha256": "d2ca0a2ddc16f2169b7ebfcbad2463fe84681f4659dff371f57c4cf13a9503da"
+    },
+    {
+      "path": "scripts/verify_nanobot.py",
+      "bytes": 2776,
+      "sha256": "50109cc6c4aca27575c3b60119fbced7b733224546a8e209b70d8ed5d56419cf"
+    },
+    {
+      "path": "setup.ps1",
+      "bytes": 1201,
+      "sha256": "cb8768f40fee9e449d80d95fe7a4551d870959f2e5f9e0b0dc58605391c556c7"
+    },
+    {
+      "path": "skills/ai-model-router/SKILL.md",
+      "bytes": 3722,
+      "sha256": "66322c7dfd378b6b648613f2ea37f413145711bc10eb947ae9176ed111c71f07"
+    },
+    {
+      "path": "skills/ai-model-router/config/models.json",
+      "bytes": 1163,
+      "sha256": "9c2d48208f65b9610c4caaba1293a49f497cfb6ac4f0c3e2569cd1b44c436d56"
+    },
+    {
+      "path": "skills/ai-model-router/scripts/router.py",
+      "bytes": 204,
+      "sha256": "852f37f339f8335efcab5ec9f0ba31e5b292f339f590583a8d4dfc5ad9305f98"
+    },
+    {
+      "path": "skills/ai-model-router/scripts/routerlib/__init__.py",
+      "bytes": 73,
+      "sha256": "a589626989f3890a5129c942a54b9069e06cc846ce5cf5c3e0a233aa6499b22a"
+    },
+    {
+      "path": "skills/ai-model-router/scripts/routerlib/cli.py",
+      "bytes": 2639,
+      "sha256": "bc3e56939e1e3f0d220d9cd0317ae5c0422ca2674898140a9f8592d03f3dc2d0"
+    },
+    {
+      "path": "skills/ai-model-router/scripts/routerlib/config.py",
+      "bytes": 2099,
+      "sha256": "244b70c3c6c42fdcaa0d30152e5b7fd423186099c09c5dfd42e0887b3c317aa8"
+    },
+    {
+      "path": "skills/ai-model-router/scripts/routerlib/policy.py",
+      "bytes": 5239,
+      "sha256": "45ba43398c5c2edce2cf2b45c26ea95ce7ab60f35186dee589ea9c82493eec8a"
+    },
+    {
+      "path": "skills/ai-model-router/scripts/routerlib/providers.py",
+      "bytes": 4312,
+      "sha256": "38e4edfe646f32a6d361f09c7dedcb26470380796be135a78eed37c5c275faa4"
+    },
+    {
+      "path": "skills/ai-model-router/scripts/routerlib/service.py",
+      "bytes": 8373,
+      "sha256": "8fbeb1f9cb6bcc02e295014223ce495ae7931996579e1b4c5523997b6dc25e1c"
+    },
+    {
+      "path": "skills/ai-model-router/scripts/routerlib/settings.py",
+      "bytes": 5197,
+      "sha256": "d128b0129255a62a76544b55639ff7e10f7e88603cfac32a97563f076204b582"
+    },
+    {
+      "path": "start-demo.bat",
+      "bytes": 377,
+      "sha256": "153fabc9dcfa75e628320a647c3a1bf20b75e600f0324ecf372ff5d041aee664"
+    },
+    {
+      "path": "tests/conftest.py",
+      "bytes": 183,
+      "sha256": "106bf2dc9931398f65c0edbcbaaab05e3c39dd440ee0eb1c5e8663ede0065874"
+    },
+    {
+      "path": "tests/test_http.py",
+      "bytes": 2583,
+      "sha256": "77f5ab319305458b5e5a7bfcf5ce9e9ef548436b60efd4ad00cc8085e4c675a2"
+    },
+    {
+      "path": "tests/test_nanobot.py",
+      "bytes": 448,
+      "sha256": "22e642834470ebdcf86164187dfc1080d1127806b1f213c3fc0c82d1d6a3bf76"
+    },
+    {
+      "path": "tests/test_router.py",
+      "bytes": 8204,
+      "sha256": "cab3364aa6b5889ccd753c4293c1e700cdc7d5ce0d98afd9a200e437ba7a8c4c"
+    },
+    {
+      "path": "web/app.js",
+      "bytes": 8176,
+      "sha256": "198f6692a8c0b2a5de828e20337b6c6467e8c8cd439f12e36dbd8ec60e25f6ce"
+    },
+    {
+      "path": "web/index.html",
+      "bytes": 6174,
+      "sha256": "508197690dc47b95ce3fb86a08cd4fb8e3589895fcea0d2ca4aabf369ba233a7"
+    },
+    {
+      "path": "web/style.css",
+      "bytes": 7253,
+      "sha256": "685726890fc1e0a23991626c12b54acb6d3c10974b03e692884cc01c651e5e57"
+    }
+  ]
+}

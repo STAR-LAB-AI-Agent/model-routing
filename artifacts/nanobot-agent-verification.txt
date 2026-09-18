@@ -1,0 +1,35 @@
+Using config: 
+C:\Users\77953\AppData\Local\Packages\OpenAI.Codex_2p2nqsd0c76g0\LocalCache\Loc
+al\RouteLab\nanobot-66c858d4809b\config.json
+
+🐈 nanobot
+I'll read the skill first, then run the routing task.
+  ↳ read skills/ai-model-router/SKILL.md
+I'll check the skill directory and stats, then run the task.
+  ↳ ls skills/ai-model-router, $ .venv\Scripts\python.exe skills\ai-mode…
+Baseline: 2 requests, 2 provider calls. Now running the live task.
+  ↳ write skills/ai-model-router/tmp_task.json
+  ↳ $ Get-Content -Raw -Encoding UTF8 skills\…
+  ↳ $ Remove-Item skills\ai-model-router\tmp_…
+已完成真实模型调用。
+
+路由档位
+- tier: balanced（Pro · 均衡），模型 deepseek-v4-pro，thinking 关闭
+- 任务类型: summary（摘要整理），难度分 1/7，输入约 88 Token（字符启发式估算）
+- 路由本身未调用分类模型（routing_model_calls=0）
+
+答案
+需求已完成，周五验收。
+
+用量与费用
+- 输入 36 / 输出 6 Token，usage_source=provider_reported（服务返回用量）
+- 费用 0.00007128 USD（按官方单价估算，peak 时段，以服务商账单为准）
+- 缓存: 未命中（cache_hit=false，provider_cache_hit_tokens=0）
+- 延迟: 总 5346.77 ms，模型 2642.27 ms；finish_reason=stop，incomplete=false
+
+新增调用数
+- 本次新增 provider_calls: 1（1 次请求，1 次真实生成调用）
+- 累计: 请求 2 → 3，provider_calls 2 → 3，成功 3，失败 0
+
+说明: 统计仅覆盖路由脚本，nanobot 自身编排的 
+Token/费用不计入。临时输入文件已删除。
