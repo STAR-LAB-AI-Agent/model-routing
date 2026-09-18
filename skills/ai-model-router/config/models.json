@@ -1,0 +1,37 @@
+{
+  "api_base": "https://api.deepseek.com",
+  "currency": "USD",
+  "price_checked_at": "2026-09-17",
+  "price_source": "https://api-docs.deepseek.com/quick_start/pricing/",
+  "pricing_note": "费用为服务返回用量乘官方单价的估算；按请求开始的 UTC 时段计价，以服务商账单为准。",
+  "models": {
+    "eco": {
+      "label": "Flash · 快速",
+      "model": "openai/deepseek-flash",
+      "thinking": "disabled",
+      "context_tokens": 65536,
+      "input_per_million": 0.3,
+      "cached_input_per_million": 0.006,
+      "output_per_million": 1.2
+    },
+    "balanced": {
+      "label": "Pro · 均衡",
+      "model": "openai/deepseek-v4-pro",
+      "thinking": "disabled",
+      "context_tokens": 65536,
+      "input_per_million": 1.32,
+      "cached_input_per_million": 0.044,
+      "output_per_million": 3.96
+    },
+    "reasoner": {
+      "label": "Pro · 深度推理",
+      "model": "openai/deepseek-v4-pro",
+      "thinking": "enabled",
+      "reasoning_effort": "low",
+      "context_tokens": 65536,
+      "input_per_million": 1.32,
+      "cached_input_per_million": 0.044,
+      "output_per_million": 3.96
+    }
+  }
+}
